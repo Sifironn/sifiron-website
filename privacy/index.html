@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sifiron Torrent uygulaması gizlilik politikası">
+<title>Gizlilik Politikası — Sifiron Torrent</title>
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23E94560'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='50' font-weight='900' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="/" class="logo">
+      <span class="logo-mark">S</span>
+      <span>Sifiron</span>
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">Ana Sayfa</a></li>
+        <li><a href="/torrent/">Torrent</a></li>
+        <li><a href="/privacy/" class="active">Gizlilik</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="/" class="active">TR</a>
+        <a href="/en/">EN</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="doc">
+  <h1>Sifiron Torrent — Gizlilik Politikası</h1>
+  <div class="meta">Son güncelleme: 19 Nisan 2026 · Sürüm 1.0.0</div>
+
+  <h2>1. Genel Bakış</h2>
+  <p>
+    Sifiron Torrent uygulaması, kullanıcı gizliliğine saygı duymayı temel
+    ilke olarak benimser. Bu gizlilik politikası, uygulamamızın hangi
+    verileri topladığını, nasıl kullandığını ve koruduğunu açıklar.
+  </p>
+
+  <h2>2. Toplanan Veriler</h2>
+
+  <h3>a) Uygulama İçinde Saklanan Veriler (Cihazınızda Kalır)</h3>
+  <ul>
+    <li>İndirilen torrent bilgileri (isim, boyut, ilerleme, kayıt yolu)</li>
+    <li>Uygulama ayarları (hız limitleri, port numarası, kayıt dizini)</li>
+    <li>PIN kilidi (SHA-256 ile şifrelenmiş; düz metin olarak saklanmaz)</li>
+    <li>İndirme geçmişi</li>
+  </ul>
+  <p><strong>Bu veriler yalnızca cihazınızda tutulur ve hiçbir sunucuya
+     gönderilmez.</strong></p>
+
+  <h3>b) Firebase Crashlytics (Çökme Raporları)</h3>
+  <p>
+    Uygulama kararlılığını artırmak amacıyla Firebase Crashlytics kullanılır.
+    Uygulama çöktüğünde otomatik olarak aşağıdaki teknik bilgiler toplanabilir:
+  </p>
+  <ul>
+    <li>Çökme yığın izi (stack trace)</li>
+    <li>Cihaz modeli ve Android sürümü</li>
+    <li>Uygulamanın sürüm numarası</li>
+    <li>Çökme zamanı</li>
+  </ul>
+  <p>
+    <strong>Önemli:</strong> Crashlytics yalnızca <em>release (sürüm)</em>
+    yapılarında aktiftir; geliştirici modunda (debug) devre dışıdır.
+    Kişisel kimlik bilgileri (isim, e-posta, telefon numarası vb.)
+    hiçbir zaman toplanmaz.
+  </p>
+  <p>
+    Firebase Crashlytics gizlilik politikası için:
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">
+      firebase.google.com/support/privacy
+    </a>
+  </p>
+
+  <h2>3. Ağ Erişimi</h2>
+  <p>Uygulama, torrent protokolü aracılığıyla aşağıdaki ağ bağlantılarını yapar:</p>
+  <ul>
+    <li>DHT (Distributed Hash Table) – torrent keşfi için</li>
+    <li>Tracker sunucuları – peer listesi almak için</li>
+    <li>Diğer torrent istemcileri (peer) – dosya transferi için</li>
+  </ul>
+  <p>
+    Bu bağlantılar torrent protokolünün zorunlu parçasıdır.
+    IP adresiniz, bağlandığınız peer'lar tarafından görülebilir —
+    bu, tüm torrent istemcilerinde geçerli bir durumdur.
+  </p>
+
+  <h2>4. Depolama İzinleri</h2>
+  <p>
+    Uygulama, indirilen dosyaları cihazınıza kaydetmek için depolama iznine
+    ihtiyaç duyar. Bu izin yalnızca indirme klasörüne erişmek için kullanılır.
+  </p>
+
+  <h2>5. Veri Paylaşımı</h2>
+  <p>
+    Sifiron Torrent, kullanıcı verilerini üçüncü taraflarla
+    <strong>satmaz, kiralamaz veya pazarlama amacıyla paylaşmaz</strong>.
+    Veriler yalnızca yukarıda açıklanan Crashlytics bağlamında Firebase
+    ile paylaşılır.
+  </p>
+
+  <h2>6. Çocukların Gizliliği</h2>
+  <p>
+    Uygulama, 13 yaşın altındaki çocuklara yönelik değildir ve bu kişilerden
+    bilerek veri toplamayacaktır.
+  </p>
+
+  <h2>7. Yasal Sorumluluk</h2>
+  <p>
+    Sifiron Torrent yalnızca bir araçtır. Kullanıcılar, uygulamayı yalnızca
+    telif hakkı dışı veya lisanslı içerikleri indirmek için kullanmakla
+    yükümlüdür. Yasal olmayan kullanımdan doğan sorumluluk tamamen
+    kullanıcıya aittir.
+  </p>
+
+  <h2>8. Değişiklikler</h2>
+  <p>
+    Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler
+    uygulama içi bildirim veya sürüm notları aracılığıyla duyurulacaktır.
+  </p>
+
+  <h2>9. İletişim</h2>
+  <p>
+    Gizlilik politikamız hakkında sorularınız için:
+    <a href="mailto:ngerenliler@gmail.com">ngerenliler@gmail.com</a>
+  </p>
+
+  <hr>
+  <p style="color:var(--text-mute); font-size:13px;">
+    Bu politika Sifiron Torrent v1.0.0 için geçerlidir.<br>
+    © 2026 Sifiron Torrent. Tüm hakları saklıdır.
+  </p>
+</main>
+
+<section class="donation">
+  <h3>💖 Projeyi Destekle</h3>
+  <p class="donation-sub">
+    Sifiron'u beğendiyseniz bağış yaparak gelişimine katkıda bulunabilirsiniz.
+  </p>
+  <div class="donation-row">
+    <span class="chain">ENS</span>
+    <span class="addr">sifiron.eth</span>
+    <button class="copy-btn" data-copy="sifiron.eth" title="Kopyala">📋</button>
+  </div>
+  <div class="donation-row">
+    <span class="chain">ETH / ERC-20</span>
+    <span class="addr">0xd70a143aBC37Ad5B701371D77A97a46AD3436130</span>
+    <button class="copy-btn" data-copy="0xd70a143aBC37Ad5B701371D77A97a46AD3436130" title="Kopyala">📋</button>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="copyright">© 2026 Sifiron</div>
+    <ul class="footer-links">
+      <li><a href="/">Ana Sayfa</a></li>
+      <li><a href="/torrent/">Torrent</a></li>
+      <li><a href="/privacy/">Gizlilik</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../assets/copy.js"></script>
+</body>
+</html>
