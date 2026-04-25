@@ -135,7 +135,8 @@ header {
   font-size: clamp(36px, 6vw, 64px);
   font-weight: 800;
   letter-spacing: -1.5px;
-  line-height: 1.1;
+  line-height: 1.2;
+  padding-bottom: 0.15em;
   margin-bottom: 24px;
   background: linear-gradient(135deg, #fff 0%, #B4C8F0 100%);
   -webkit-background-clip: text;
